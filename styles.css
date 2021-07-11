@@ -1,0 +1,51 @@
+body {
+  display: inline-block;
+  background-color: lavenderblush;
+  padding: 0 40px 100px 60px;
+  min-width: 100%;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  width: 100vw;
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+}
+
+
+.img-container {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: white;
+  width: 90%;
+}
